@@ -7,6 +7,8 @@ function fetchCountries(term) {
   const countriesUrl = `https://restcountries.eu/rest/v2/name/${term}`;
   console.log("countriesUrl", countriesUrl);
 
+  console.log("nova linija");
+
   return new Promise((resolve) => {
     axios
       .get(countriesUrl)
