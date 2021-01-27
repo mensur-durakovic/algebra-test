@@ -1,0 +1,21 @@
+{
+  "name": "pacijalni-priprema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/watchify src/index.js -o bundle.js -t [ babelify --presets [ @babel/preset-env ] ]",
+    "build": "./node_modules/.bin/browserify src/index.js -o bundle.js -t [ babelify --presets [ @babel/preset-env] ]"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "axios": "^0.21.1",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "watchify": "^3.11.1"
+  }
+}
